@@ -51,7 +51,7 @@ func messageCreate(session *discordgo.Session, msg *discordgo.MessageCreate) {
 		session.ChannelMessageSend(msg.ChannelID, "pong")
 	}
 
-	if commandt == "test-embed" {
+	if command == "test-embed" {
 		embed := &discordgo.MessageEmbed{
 			Type:        discordgo.EmbedTypeRich,
 			Title:       "Test Embed",
